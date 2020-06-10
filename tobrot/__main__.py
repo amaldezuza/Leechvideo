@@ -60,7 +60,7 @@ if __name__ == "__main__" :
     #
     incoming_purge_message_handler = MessageHandler(
         incoming_purge_message_f,
-        filters=Filters.command(["purge@MaxxLeechPro_Bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["purge"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_purge_message_handler)
     #
@@ -72,7 +72,7 @@ if __name__ == "__main__" :
     #
     status_message_handler = MessageHandler(
         status_message_f,
-        filters=Filters.command(["status@MaxxLeechPro_Bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["status"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(status_message_handler)
     #
